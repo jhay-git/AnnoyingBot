@@ -4,8 +4,7 @@ import os
 from discord.ext import commands
 
 BOT_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
-# Define intents
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 
 # Create a bot instance
 bot = commands.Bot(command_prefix='!', intents=intents)
